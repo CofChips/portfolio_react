@@ -1,0 +1,15 @@
+.logo{
+    vertical-align: middle;
+    display: inline;
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.navBar{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* .border{
+    border-right: 1px solid #bdbdbd;
+} */
