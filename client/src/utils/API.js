@@ -9,5 +9,8 @@ export default {
     },
     getSkills3: function(){
         return axios.get("/api/skills3");
-    }
+    },
+    sendEmail: function(emailInfo) {
+        return axios.post("/api/email", emailInfo);
+      }
 }

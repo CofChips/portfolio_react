@@ -53,7 +53,7 @@ function About() {
             .catch(err => console.log(err));
     };
 
-    console.log("skills: ", skills1)
+    // console.log("skills: ", skills1)
 
 
     // const skillsList1 = skills1.map((skill) =>
