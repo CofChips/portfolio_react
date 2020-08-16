@@ -4,16 +4,30 @@ import "./style.css";
 
 function Navbar(){
     return (
-        <nav className="transparent z-depth-0">
-        <div className="nav-wrapper navBar">
-          <a href="/" className="brand-logo logo"><img className="logo" src="./assets/img/banffsmall.jpg" alt="logo"/></a>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li><a className="grey-text text-darken-1" href="/about">About</a></li>
-            <li><a className="grey-text text-darken-1" href="/portfolio">Portfolio</a></li>
-            <li><a className="grey-text text-darken-1" href="/contact">Contact</a></li>
+      <nav className="navbar navbar-expand flex-column flex-md-row p-0 bg-white bd-navbar overflow-hidden">
+      <a className="navbar-brand p-4 font-weight-bold d-none d-md-block h-100 left" href="/">
+          <img src="./assets/img/banffsmall.jpg" alt="portfolio" className="rounded-circle image"/>
+      </a>
+      <div className="d-block d-md-none p-4 font-weight-bold m-0 w-100">
+          <p className="text-center m-0"> <img src="./assets/img/banffsmall.jpg" alt="portfolio" className="rounded-circle image"/></p>
+      </div>
+      <div className="navbar-nav-scroll my-3 ml-md-auto right">
+          <ul className="navbar-nav">
+              <li className="nav-item">
+                  <a className="nav-link text-black-50 border-right py-0 px-3" href="/about"><small>About</small></a>
+              </li>
+              <li className="nav-item">
+                  <a className="nav-link text-black-50 border-right py-0 px-3"
+                      href="/portfolio"><small>Portfolio</small></a>
+              </li>
+              <li className="nav-item">
+                  <a className="nav-link text-black-50 py-0 pl-3" href="/contact"><small>Contact</small></a>
+                  </li>
           </ul>
-        </div>
-      </nav>
+      </div>
+  </nav>
+
+
     )
 }
 

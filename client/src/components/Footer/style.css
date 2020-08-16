@@ -1,0 +1,20 @@
+.footer {
+    height: 50px;
+    text-align: center;
+    font-size: larger;
+}
+
+.link {
+    color: #D5750A;
+    font-size: 30px;
+}
+
+/* body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  } */

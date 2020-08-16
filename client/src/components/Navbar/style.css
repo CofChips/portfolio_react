@@ -5,6 +5,18 @@
     border-radius: 50%;
 }
 
+.left{
+    margin-left: 3%;
+}
+
+.right{
+    margin-right: 3%;
+}
+
+.image{
+    max-width: 64px;
+}
+
 .navBar{
     margin-left: 3%;
     margin-right: 3%;

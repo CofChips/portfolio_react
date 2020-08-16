@@ -3,6 +3,7 @@ import "./contact.css";
 import Header from "../../components/Header/index";
 import API from "../../utils/API";
 
+
 function Contact() {
     const nameRef = useRef();
     const emailRef = useRef();
@@ -37,18 +38,15 @@ function Contact() {
                             {/* <label>Name</label> */}
                         </div>
                     </div>
-
-
                     <div className="row">
                         <div className="input-field col s12">
                         {/* <label>Email</label> */}
-                            <input required ref={emailRef} id="email" type="email" className="validate" placeholder="email"/>
-
+                            <input required ref={emailRef} id="email" type="email" className="validate" placeholder="email@gmail.com"/>
                         </div>
                     </div>
                     <div className="row">
                         <div className="input-field col s12">
-                            <textarea required ref={contentRef} id="textarea1" className="materialize-textarea" placeholder="content"></textarea>
+                            <textarea required ref={contentRef} id="textarea1" className="materialize-textarea" placeholder="Enter message here"></textarea>
                             {/* <label>Textarea</label> */}
                         </div>
                     </div>
@@ -57,11 +55,8 @@ function Contact() {
                             <i className="material-icons right">send</i>
                         </button>
                     </div>
-
                 </form>
             </div>
-
-
         </div>
 
     )
