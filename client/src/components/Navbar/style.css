@@ -1,14 +1,18 @@
 .logo{
-    vertical-align: middle;
+    /* vertical-align: middle; */
     display: inline;
-    max-width: 50px;
+    max-width: 64px;
     border-radius: 50%;
 }
 
 .navBar{
     margin-left: 3%;
     margin-right: 3%;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
+
+
 
 /* .border{
     border-right: 1px solid #bdbdbd;
