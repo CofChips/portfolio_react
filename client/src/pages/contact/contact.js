@@ -1,13 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./contact.css";
 import Header from "../../components/Header/index";
 import API from "../../utils/API";
+import Footer from "../../components/Footer/index";
 
 
 function Contact() {
     const nameRef = useRef();
     const emailRef = useRef();
     const contentRef = useRef();
+
+    useEffect(() => {
+        document.title = "Contact"
+    }, [])
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -28,35 +33,35 @@ function Contact() {
 
 
     return (
-        <div>
+        <div className="container w-100 mt-5 auto">
             <Header header={"Contact"} />
-            <div className="row">
-                <form className="col s12" onSubmit={handleSubmit}>
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <input required ref={nameRef} id="first_name" type="text" className="validate" placeholder="Name"/>
-                            {/* <label>Name</label> */}
+            <div className="row m-0">
+                <div className="col-md-12 p-0">
+                    <section className="jumbotron bg-white py-2 px-1 my-5 mx-md-auto maxform">
+                        <div className="container">
+                            <form className="label-left" onSubmit={handleSubmit}>
+                                <div className="form-group">
+                                    <label htmlFor="nameform">Name</label>
+                                    <input type="text" className="form-control" id="nameForm" name="name"
+                                        placeholder="Your Name" required ref={nameRef} />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="emailForm">Email</label>
+                                    <input type="email" className="form-control" id="emailForm" name="email"
+                                        placeholder="example@gmail.com" required ref={emailRef} />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="textForm">Message</label>
+                                    <textarea className="form-control" id="textForm" rows="8" name="message" required ref={contentRef}></textarea>
+                                </div>
+                                <button type="submit" value="Send" className="btn formButton" id="submitButton"
+                                >Submit</button>
+                            </form>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="input-field col s12">
-                        {/* <label>Email</label> */}
-                            <input required ref={emailRef} id="email" type="email" className="validate" placeholder="email@gmail.com"/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <textarea required ref={contentRef} id="textarea1" className="materialize-textarea" placeholder="Enter message here"></textarea>
-                            {/* <label>Textarea</label> */}
-                        </div>
-                    </div>
-                    <div className="row">
-                        <button className="btn waves-effect waves-light" type="submit" name="action">Submit
-                            <i className="material-icons right">send</i>
-                        </button>
-                    </div>
-                </form>
+                    </section>
+                </div>
             </div>
+            <Footer />
         </div>
 
     )

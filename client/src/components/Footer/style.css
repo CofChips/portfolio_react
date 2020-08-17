@@ -9,6 +9,10 @@
     font-size: 30px;
 }
 
+.footheight{
+  height: 50px;
+}
+
 /* body {
     display: flex;
     min-height: 100vh;

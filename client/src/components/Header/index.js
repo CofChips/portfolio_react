@@ -3,11 +3,13 @@ import "./style.css";
 
 function Header(props){
     return (
-        <div className="row">
-        <div className="col m1 l2"></div>
-        <div className="col s12 m10 l8 border"><h1 className="header">{props.header}</h1></div>
-        <div className="col m1 l2"></div>
-      </div>
+
+      <div className="row mt-5 pb-4 border-bottom mb-4">
+            <div className="col-md text-center roboto">
+                <h1 className="header">{props.header}</h1>
+            </div>
+        </div>
+
     )
 }
 

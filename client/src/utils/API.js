@@ -12,5 +12,8 @@ export default {
     },
     sendEmail: function(emailInfo) {
         return axios.post("/api/email", emailInfo);
-      }
+      },
+    getPortfolio: function(){
+        return axios.get("/api/portfolio")
+    }
 }

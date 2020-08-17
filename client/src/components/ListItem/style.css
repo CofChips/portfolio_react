@@ -1,3 +1,4 @@
-.list{
-    text-align: center;
+.list {
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
 }
