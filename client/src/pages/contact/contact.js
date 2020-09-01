@@ -35,6 +35,9 @@ function Contact() {
     return (
         <div className="container w-100 mt-5 auto">
             <Header header={"Contact"} />
+            <div className="row m-0 justify-content-center">
+                <p className="m-0">Feel free to email me at <a className="linkRes" href="mailto:christopher.neal.lee@gmail.com">christopher.neal.lee@gmail.com</a> or through the form below.</p>
+            </div>
             <div className="row m-0">
                 <div className="col-md-12 p-0">
                     <section className="jumbotron bg-white py-2 px-1 my-5 mx-md-auto maxform">

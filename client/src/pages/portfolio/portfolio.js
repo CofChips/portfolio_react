@@ -31,6 +31,8 @@ function Portfolio() {
             image={project.img}
             repo={project.repo}
             pic={project.live}
+            description={project.description}
+            tech={project.tech}
         />
     )
 

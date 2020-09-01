@@ -17,6 +17,10 @@
     max-width: 64px;
 }
 
+.imageSmall{
+    max-width: 55px;
+}
+
 .navBar{
     margin-left: 3%;
     margin-right: 3%;

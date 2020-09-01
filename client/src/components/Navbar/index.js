@@ -8,8 +8,8 @@ function Navbar(){
       <a className="navbar-brand p-4 font-weight-bold d-none d-md-block h-100 left" href="/">
           <img src="./assets/img/banffsmall.jpg" alt="portfolio" className="rounded-circle image"/>
       </a>
-      <div className="d-block d-md-none p-4 font-weight-bold m-0 w-100">
-          <p className="text-center m-0"> <img src="./assets/img/banffsmall.jpg" alt="portfolio" className="rounded-circle image"/></p>
+      <div className="d-block d-md-none pt-2 font-weight-bold m-0 w-100">
+          <p className="text-center m-0"><a href="/"><img src="./assets/img/banffsmall.jpg" alt="portfolio" className="rounded-circle imageSmall"/></a></p>
       </div>
       <div className="navbar-nav-scroll my-3 ml-md-auto right">
           <ul className="navbar-nav">

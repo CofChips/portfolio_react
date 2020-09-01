@@ -29,6 +29,18 @@ module.exports = function (sequelize, DataTypes) {
                     len: [1]
                 }
             },
+            description: {
+                type: DataTypes.STRING,
+                validate: {
+                    len: [1]
+                }
+            },
+            tech: {
+                type: DataTypes.STRING,
+                validate: {
+                    len: [1]
+                }
+            }
         });
 
     return portfolio;
