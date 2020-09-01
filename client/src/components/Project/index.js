@@ -10,17 +10,11 @@ function Project(props) {
                     <img src={props.image} className="card-img-top imageP border" alt={props.name} />
                 </a>
             </div>
-            <div className="card-body text-center pb-0">
+            <div className="card-body text-center">
                 <p className="card-title"> <a href={props.live} target="blank" className="text-secondary"> Live site </a> |  <a href={props.repo} target="blank" className="text-secondary">Repository</a></p>
-
+                <p className="card-text text-left">{props.description}</p>
+                <p className="card-text text-left">Built with: {props.tech}</p>
             </div>
-            <div className="card-body text-left px-1 pt-0 pb-3">
-                {props.description}
-            </div>
-            <div className="card-body text-left px-1 py-0">
-                Built with: {props.tech}
-            </div>
-
         </div>
 
     )
